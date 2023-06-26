@@ -1,26 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import {store, persistor }from "./redux/Store";
-import { PersistGate } from 'redux-persist/integration/react';
-import { Provider } from 'react-redux'
-import App from './App';
-import 'react-toastify/dist/ReactToastify.css';
-import { app } from './firebase.config';
+import bazar from "../assets/bazaar.png"
+import google from "../assets/google.png"
+import googleLogo from "../assets/google.png"
+import githubLogo from "../assets/google.png"
+import github from "../assets/githubh.png"
+import payment from "../assets/payment.png"
+import cart from "../assets/cart.png"
+import bag from "../assets/bag.png"
+import login from "../assets/login.jpeg"
 
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-<Provider store={store} app={app}>
-   
-    <PersistGate loading= {"loading"} persistor= {persistor}>
 
-<App/>
-    </PersistGate>
-</Provider>
-
-);
-
-
+export {bazar , google,github, payment,cart, login,bag, googleLogo,githubLogo};
